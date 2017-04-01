@@ -9,7 +9,7 @@ export const loadTodos = (data) => {
 
 export const fetchTodos = () => {
   return (dispatch) => {
-    fetch('http://localhost:1234/todos')
+    fetch('http://localhost:4000/todos')
     .then((response) => {
       return response.json()
     })
@@ -22,7 +22,7 @@ export const fetchTodos = () => {
 export const createTodo = (data) => {
   return dispatch => {
     const newData = {title: data, content: ''}
-    fetch('http://localhost:1234/todos', {
+    fetch('http://localhost:4000/todos', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ export const createTodo = (data) => {
 
 export const removeTodo = (data) => {
   return dispatch => {
-    fetch('http://localhost:1234/todos/' + data, {
+    fetch('http://localhost:4000/todos/' + data, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ export const updateTodo = (id, data) => {
     const updatedData = {title: data, content: ''}
     console.log(id);
     console.log(updatedData);
-    fetch('http://localhost:1234/todos/' + id, {
+    fetch('http://localhost:4000/todos/' + id, {
     method: 'PUT',
     headers: {
       'Content-Type' : 'application/json'

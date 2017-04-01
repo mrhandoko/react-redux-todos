@@ -55,7 +55,7 @@ class InputTodo extends Component {
           { !this.props.statusEditing ?
             (<form onSubmit={(event) => this.submitTodo(event)}>
               <div className="Text-wrapper">
-                <textarea rows={15} onChange={(event) => this.stateWriteTodo(event)} value={this.state.writeTodo} />
+                <textarea rows={5} onChange={(event) => this.stateWriteTodo(event)} value={this.state.writeTodo} />
               </div>
               <div>
                 <button className="Submit">SUBMIT</button>
@@ -63,8 +63,7 @@ class InputTodo extends Component {
             </form>) : (
               <form onSubmit={(event) => this.updateTodo(event, this.props.idEditTodo)}>
                 <div className="Text-wrapper">
-                  <h1>{this.props.idEditTodo}</h1>
-                  <textarea rows={15} onChange={(event) => this.changeEditTodo(event)} value={this.state.editTodo} />
+                  <textarea rows={5} onChange={(event) => this.changeEditTodo(event)} value={this.state.editTodo} />
                 </div>
                 <div>
                   <input type="submit" className="Update" defaultValue="UPDATE" />

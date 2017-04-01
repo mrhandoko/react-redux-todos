@@ -33,6 +33,13 @@ textarea {
   width: 100%;
 }
 
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .Submit, .Update, .Cancel {
   padding-top: 10px;
   padding-bottom: 10px;

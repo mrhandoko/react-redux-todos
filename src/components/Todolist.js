@@ -5,10 +5,6 @@ import '../App.css'
 import { fetchTodos, removeTodo } from '../actions'
 
 class Todolist extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     this.props.fetchTodos()
   }
@@ -21,6 +17,10 @@ class Todolist extends Component {
     this.props.showEditTodoForm()
   }
 
+  checkCompleted(id) {
+    console.log(id);
+  }
+
   render() {
     return (
       <div>
@@ -28,6 +28,7 @@ class Todolist extends Component {
           {
             this.props.todos.map((item, index) =>
             <li key={index}>{item.title}
+            <input type="checkbox" onChange={() => this.checkCompleted(index)} />
             <button onClick={() => {
                 this.updateTodo(item.id)
                 this.props.getIdEditTodo(item.id, item.title)

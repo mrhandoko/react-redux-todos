@@ -19,5 +19,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrhandoko/react-redux-todos.git"
+  },
+  "author": "mrhandoko <bambank.handoko@yahoo.com>",
+  "license": "MIT",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "bugs": {
+    "url": "https://github.com/mrhandoko/react-redux-todos/issues"
+  },
+  "homepage": "https://github.com/mrhandoko/react-redux-todos#readme"
 }
