@@ -1,19 +1,14 @@
 {
   "todos": [
     {
-      "title": "aweawe",
-      "content": "",
-      "id": 1
-    },
-    {
-      "title": "sdfgsdfgsdfg",
-      "content": "",
-      "id": 2
-    },
-    {
-      "title": "beli sepatu baru",
+      "title": "beli sepatu baru yang bagus",
       "content": "",
       "id": 3
+    },
+    {
+      "title": "testeng",
+      "content": "",
+      "id": 4
     }
   ]
 }
